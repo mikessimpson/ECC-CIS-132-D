@@ -1,0 +1,169 @@
+/* Styles for the elements */
+* {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 90%;
+    box-sizing: border-box;
+}
+body {    
+    max-width: 80%;
+    margin: auto;
+    padding: 15px 1.5em;
+    border-bottom: 1px 1px solid lightcoral;
+}
+main {
+    width: 69%;
+    float: left;
+    clear: center;
+    background-color: azure;
+	border-right: 1px solid lightcoral;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0 0;
+}
+aside {
+    width: 30%;
+    float: right;  
+    background-color: azure; 
+    text-align: center;
+    border-left: 3px solid lightcoral;
+    border-bottom: 3px solid lightcoral;
+}
+aside img {float: center;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Styles for the header */
+header {
+    display: block;
+    text-align: center;
+    background-color: antiquewhite;
+    font-size: 250%;
+    clear: both;
+    border-bottom: 3px solid lightcoral;
+}
+header img{
+    float: left;
+}
+h1 {
+    font-size: 100%;
+    color: #ce2027;
+    text-shadow: 2px 2px 2px black;
+}
+h3 {
+    font-size: 75%;
+    color: #ce2027;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Styles for the main content */
+main p, section {
+    font-size: 200%;
+}
+main p {
+    color: #ce2027;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+h2 {
+    font-size: 85%;
+    color: #ce2027;
+    text-shadow: 2px 2px 2px black;
+    padding: 0em;
+}
+main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightcoral;
+}
+main li {
+    float: left;
+    border-right: 3px solid antiquewhite;
+}
+main li:last-child {
+    border-left: none;
+}
+main a {
+    display: block;
+    padding: 8px;
+}
+main li a {
+    display: block;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 175%;
+    padding: 14px 16px;
+    text-decoration: none;    
+    font-weight: bold;
+}
+main li a:hover:not(.active) {
+    background-color: #ce2027;
+}
+.active {
+    background-color: crimson;
+}
+
+/* Styles for the section */
+section {
+    display: block;   
+}
+h2 {
+    font-size: medium;
+    color: royalblue;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Styles for the aside */
+aside ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: lightcoral;
+}
+aside li {
+    float: left;
+}
+aside li a {
+    display: block;
+    color: antiquewhite;
+    font-size: 175%;
+    padding: 12px 14px;
+    text-decoration: none;    
+    font-weight: bold;
+}
+
+/* Styles for the article */
+article {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 2px solid black;
+}
+article h2 {
+    font-size: 225%;
+    margin-top: 0;
+    column-span: all;
+    text-align: center;
+}
+article p {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+/* Styles for the footer */
+footer {
+    background-color: antiquewhite;
+    text-align: left;
+    font-size: 150%;
+    clear: both;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
